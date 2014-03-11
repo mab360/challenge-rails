@@ -1,0 +1,20 @@
+<div class="left-section">
+  <%=  button_to "Crawl!", { action: "create" }, data: { disable_with: 'loading...' }, class: "button-blue" %>
+  </div>
+
+
+  <div class="right-section">
+    <strong><%= "#{@offers.count} Offers" %></strong>
+    <br />
+
+    <% @offers.each do |offer| %>
+      <br />
+      <div class="box">
+        <strong><%= offer.title %></strong> <br/>
+        <%= offer.description %><br/><br/>
+        <%= link_to('Get Deal', offer.url, :target=>'blank', class: "button-blue") %>
+          <br />
+        </div>
+      <% end %>
+
+    </div>

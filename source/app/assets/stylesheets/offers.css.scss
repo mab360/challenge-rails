@@ -1,0 +1,28 @@
+// Place all the styles related to the Offers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.left-section {
+float:left; width:10%;
+}
+
+.right-section {
+float:left; width:85%
+}
+
+.button-blue {
+border: 0 none; border-radius: 2px 2px 2px 2px;	color: #FFFFFF;	cursor: pointer; font-weight: bold; line-height: 20px; padding: 2px 10px; text-transform: none; transition: all 0.3s ease 0s; -moz-transition: all 0.3s ease 0s; -webkit-transition: all 0.3s ease 0s; background: none repeat scroll 0 0 #2db6cf; color: white; margin-top: -3px;
+}
+
+.box {
+border: 1px solid grey; padding: 10px;
+}
+
+.box .button-blue {
+text-decoration:none; color:white; float: right;
+}
+
+.box .button-blue:hover {
+text-decoration:none; color:white;
+}

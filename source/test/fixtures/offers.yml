@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  merchant_id: 
+  title: MyString
+  description: MyText
+  url: MyString
+  expires_at: 2014-03-10 16:49:48
+
+two:
+  merchant_id: 
+  title: MyString
+  description: MyText
+  url: MyString
+  expires_at: 2014-03-10 16:49:48

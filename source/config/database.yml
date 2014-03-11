@@ -1,0 +1,29 @@
+<%
+  def determine_adapter
+    if Gem.loaded_specs.key?("mysql2")
+      "mysql2"
+    else
+      "mysql"
+    end
+  rescue
+    "mysql"
+  end
+%>
+
+login: &login
+  adapter:  <%= determine_adapter %> 
+  username: root
+  password: root
+  host: localhost
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *login
+  database: challenge_dev
+production:
+  <<: *login
+  database: challenge_pro
+test:
+  <<: *login
+  database: challenge_test
